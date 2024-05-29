@@ -13,6 +13,15 @@
         margin: 60px 0px;
         font-size: 60px;
         border: none;
+
+        color: var(--blue);
+        transform: rotate(180deg);
+        text-transform: lowercase;
+        text-shadow: 
+            1px 1px 0 var(--white),
+            -1px 1px 0 var(--white),
+            -1px -1px 0 var(--white),
+            1px -1px 0 var(--white);
     }
 
     .sidebar::before {
@@ -30,21 +39,7 @@
         width: 8px;
     }
 
-    .roboto-condensed-black-italic {
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 900;
-        font-style: italic;
-        color: var(--blue);
-        transform: rotate(180deg);
-        text-transform: lowercase;
-        text-shadow: 
-            1px 1px 0 var(--white),
-            -1px 1px 0 var(--white),
-            -1px -1px 0 var(--white),
-            1px -1px 0 var(--white);
-    }
-
-    .roboto-condensed-black-italic:hover {
+    .sidebar:hover {
         color: var(--white);
         text-shadow: none;
     }

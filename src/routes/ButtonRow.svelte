@@ -1,9 +1,9 @@
-<div class="buttons roboto-black-italic">
-    <button on:click={() => window.open('https://www.linkedin.com', '_blank')}>LinkedIn</button>
-    <button on:click={() => window.open('https://github.com', '_blank')}>GitHub</button>
-    <button on:click={() => window.open('https://www.youtube.com', '_blank')}>YouTube</button>
-    <button on:click={() => window.open('https://itch.io', '_blank')}>Itch.Io</button>
-    <button on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Resume</button>
+<div class="buttons">
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.linkedin.com', '_blank')}>LinkedIn</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://github.com', '_blank')}>GitHub</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.youtube.com', '_blank')}>YouTube</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://itch.io', '_blank')}>Itch.Io</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Resume</button>
     <!-- <button>Email</button> -->
 </div>
 
@@ -31,12 +31,8 @@
         overflow: visible;
         margin: 8px 16px;
         position: relative;
-        
-    }
-    .roboto-black-italic button{
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 900;
-        font-style: italic;
+        cursor: pointer; /* This will change the cursor to a pointer when hovering over buttons */
+
         color: var(--blue);
         text-transform: lowercase;
         text-shadow: 
@@ -44,13 +40,14 @@
             -1px 1px 0 var(--white),
             -1px -1px 0 var(--white),
             1px -1px 0 var(--white);
+        
     }
 
     button::before {
         content: '';
         background-color: var(--orange);
         position: absolute;
-        bottom: -12px;
+        bottom: -10px;
         width: calc(100%);
         height: 0px;
         transition: all .1s ease-in-out;
@@ -60,27 +57,9 @@
         height: 8px;
     }
 
-    .roboto-black-italic button:hover {
+    button:hover {
         color: var(--white);
         text-shadow: none;
     }
 
-    .roboto-condensed-black-italic {
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 900;
-        font-style: italic;
-        color: var(--blue);
-        transform: rotate(180deg);
-        text-transform: lowercase;
-        text-shadow: 
-            1px 1px 0 var(--white),
-            -1px 1px 0 var(--white),
-            -1px -1px 0 var(--white),
-            1px -1px 0 var(--white);
-    }
-
-    .roboto-condensed-black-italic:hover {
-        color: var(--white);
-        text-shadow: none;
-    }
 </style>

@@ -12,11 +12,11 @@
             <img src={img} alt={title}/>
         </div>
         
-        <div class="title roboto-medium-italic">
+        <div class="title roboto-condensed-medium-italic">
             {title}
             <div class="title-underline"></div>
         </div>
-        <div class="tags roboto-regular-italic">
+        <div class="tags roboto-condensed-regular-italic">
             {#each tags as tag}
                 <span class="tag">{tag}</span>
             {/each}
@@ -58,6 +58,7 @@
     .tag {
         position: relative;
         margin: 1%;
+        line-height: 1.5;
     }
 
     .tag:after {
@@ -70,15 +71,5 @@
         background-color: var(--orange); /* Adjust color */
     }
 
-    .roboto-regular-italic {
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-    }
 
-    .roboto-medium-italic {
-        font-family: "Roboto Condensed", sans-serif;
-        font-weight: 500;
-        font-style: italic;
-    }
 </style>

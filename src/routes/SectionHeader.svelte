@@ -2,7 +2,7 @@
     export let text = '';
 </script>
   
-<h2 class="roboto-black-italic">
+<h2 class="roboto-condensed-black-italic">
     <span class="underline">{text}</span>
 </h2>
 
@@ -20,10 +20,7 @@
     background-color: var(--orange); /* Adjust color */
 }
 
-.roboto-black-italic {
-    font-family: "Roboto Condensed", sans-serif;
-    font-weight: 900;
-    font-style: italic;
+h2 {
     color: var(--white);
     font-size: 72pt;
     white-space: nowrap;

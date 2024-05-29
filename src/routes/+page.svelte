@@ -107,13 +107,7 @@
     }
 
     .content {
-        color: var(--white);
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        font-style: italic;
-        font-size: 20px;
-        line-height: 1.5;
-        width: min(84%, 1400px);
+        width: min(calc(75%), 1400px);
         margin: auto;
         border: 1px solid var(--white);
     }

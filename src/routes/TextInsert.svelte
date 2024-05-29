@@ -38,6 +38,7 @@
         position: relative;
         margin: 12px 0;
         color: var(--white);
+        font-size: 16pt;
     }
 
     .text-box::before {
@@ -49,12 +50,5 @@
         position: absolute; /* This will make the ::before pseudo-element positioned relative to the text-box div */
         left: -36px; /* This will position the rectangle to the left of the text-box div */
         top: 0; /* This will offset the rectangle from the top of the text-box div */
-    }
-
-    .roboto-regular {
-        font-family: "Roboto", sans-serif;
-        font-weight: 400;
-        letter-spacing: 0.25px;
-        font-size: 16pt;
     }
 </style>
