@@ -2,23 +2,27 @@
     export let title = '';
     export let img = '';
     export let tags: string[] = [];
+    export let blogName = '';
+    let href = `/devlogs/${blogName}`;
 </script>
 
-<div class="fixed-size-component">
-    <div class="img-box">
-        <img src={img} alt={title}/>
+<a href={href}>
+    <div class="fixed-size-component">
+        <div class="img-box">
+            <img src={img} alt={title}/>
+        </div>
+        
+        <div class="title roboto-medium-italic">
+            {title}
+            <div class="title-underline"></div>
+        </div>
+        <div class="tags roboto-regular-italic">
+            {#each tags as tag}
+                <span class="tag">{tag}</span>
+            {/each}
+        </div>
     </div>
-    
-    <div class="title roboto-medium-italic">
-        {title}
-        <div class="title-underline"></div>
-    </div>
-    <div class="tags roboto-regular-italic">
-        {#each tags as tag}
-            <span class="tag">{tag}</span>
-        {/each}
-    </div>
-</div>
+</a>
 
 <style>
     .img-box {
@@ -37,7 +41,7 @@
         color: var(--white);
         margin: 2% 0;
         text-transform: uppercase;
-        
+        border: 2px solid var(--white);
     }
 
     .title {

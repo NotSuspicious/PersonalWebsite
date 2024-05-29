@@ -13,7 +13,7 @@
 </script>
 
 <div class="text-box roboto-regular">
-    <p>I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer scientist @ USC Games.
+    <p>I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer science @ USC Games.
         <br/>
         <br/>
         My greatest passion is leveraging my technical and creative skills to create multimedia experiences.

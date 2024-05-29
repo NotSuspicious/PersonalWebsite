@@ -1,16 +1,18 @@
 <script>
     export let title = '';
+    export let href = '';
 </script>
 
-<div class="sidebar roboto-condensed-black-italic">
+<a href={href} class="sidebar roboto-condensed-black-italic">
     {title}
-</div>
+</a>
 
 <style>
     .sidebar {
         writing-mode: vertical-rl;
         margin: 60px 0px;
         font-size: 60px;
+        border: none;
     }
 
     .sidebar::before {

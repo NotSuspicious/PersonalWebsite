@@ -9,7 +9,7 @@
     import SectionHeader from './SectionHeader.svelte';
     import TextInsert from './TextInsert.svelte';
     import ButtonRow from './ButtonRow.svelte';
-    import SidebarElement from './SidebarElement.svelte';
+    import Sidebar from './Sidebar.svelte';
 </script>
   
 <body>
@@ -34,29 +34,24 @@
                 title="VR Gameplay Engineer"
                 img=""
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
+                blogName="they-shall-not-come-back"
             />
             <Project 
                 title="Engineer"
                 img=""
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
+                blogName="computational-fluid-dynamics"
             />
             <Project 
                 title="Director"
                 img=""
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
+                blogName="ratpack"
             />
         </div>
         
-        <img src="/Footer.svg" alt="Footer" />
+
         
-        
-        <div class="sidebar">
-            <SidebarElement title="Home"/>
-            <SidebarElement title="Fun"/>
-            <SidebarElement title="Music"/>
-        </div>
-        
-   
 </body>
 
 <style>
@@ -67,7 +62,7 @@
         --highlight: #F2BC6B;
     }
 
-    html, body {
+    body {
         /* padding: calc(8px + 1.5625vw);
         margin-left: 4vw;
         margin-right: 8vw; */
@@ -77,32 +72,11 @@
         overflow-x: hidden;
     }
 
-    .sidebar {
-        width: 108px;
-        height: 80vh;
-        position: fixed;
-        right: 0;
-        top: 0;
-    }
-
-
-
     model-viewer {
         /* margin: max(calc(1200px - vw), 0) 0; */
-        
         width: 600px;
         height: 100%;
         /* margin-left: -200px; */
-        
-    }
-
-    .header {
-        margin: 48px 0;
-    }
-
-    .header-img {
-        width: 550px;
-        height: auto;
     }
     
     .landing-page {
@@ -115,6 +89,14 @@
         margin: auto;   
     }
     
+    .header {
+        margin: 48px 0;
+    }
+
+    .header-img {
+        width: 550px;
+        height: auto;
+    }
 
     @media (max-width: 992px) { /* This will apply the styles inside the braces when the window is narrower than 600px */
         .landing-page {
