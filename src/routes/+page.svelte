@@ -63,8 +63,8 @@
 <style>
      :root {
         --blue: #358BAF;
-        --orange: #d48d21;
-        /* --orange: #C17F1C; */
+        /* --orange: #d48d21; */
+        --orange: #C17F1C;
         --white: #FFFFFF;
         --highlight: #F2BC6B;
     }
