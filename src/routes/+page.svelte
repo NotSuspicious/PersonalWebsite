@@ -31,20 +31,26 @@
             <SectionHeader text="FEATURED WORKS" />
 
             <Project 
-                title="VR Gameplay Engineer"
-                img=""
+                title="They Shall Not Come Back"
+                role="VR Gameplay Engineer"
+                background="/images/TSNCB-Background.png"
+                logo="/images/TSNCB-Logo.png"
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
                 blogName="they-shall-not-come-back"
             />
             <Project 
-                title="Engineer"
-                img=""
+                title="Computational Fluid Dynamics"
+                role="Engineer"
+                background="/images/CFD-Background.png"
+                logo="/images/CFD-Logo.png"
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
                 blogName="computational-fluid-dynamics"
             />
             <Project 
-                title="Director"
-                img=""
+                title="Rat Pack"
+                role="Director"
+                background="/images/RatPack-Background.png"
+                logo="/images/RatPack-Logo.png"
                 tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
                 blogName="ratpack"
             />
@@ -86,6 +92,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
         margin-top: 32px;
+        margin-left: -10%;
         margin: auto;   
     }
     
@@ -107,9 +114,9 @@
     }
 
     .content {
-        width: min(calc(75%), 1400px);
+        width: min(calc(75%), 1300px);
         margin: auto;
-        border: 1px solid var(--white);
+        
     }
 
     img {

@@ -1,19 +1,23 @@
 <script lang="ts">
     export let title = '';
-    export let img = '';
+    export let role = '';
+    export let background = '';
+    export let logo = '';
     export let tags: string[] = [];
     export let blogName = '';
     let href = `/devlogs/${blogName}`;
+    
 </script>
 
 <a href={href}>
     <div class="fixed-size-component">
         <div class="img-box">
-            <img src={img} alt={title}/>
+            <img class='logo' src={logo} alt=' ' data-alt={title}/>
+            <img class='background' src={background} alt=''/>
         </div>
         
         <div class="title roboto-condensed-medium-italic">
-            {title}
+            {role}
             <div class="title-underline"></div>
         </div>
         <div class="tags roboto-condensed-regular-italic">
@@ -30,29 +34,86 @@
         width: 95%;
         height: 75%;
         left: 5%;
-        border: 2px solid var(--white);
-        margin-bottom: -2.5%;
+
+        margin-bottom: -16px;
+        overflow: hidden;
+        
     }   
+
+    .img-box img::after {
+        content: attr(data-alt);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        color: white;
+        background-color: rgb(0, 0, 0, 0.1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: opacity 0.3s;
+        pointer-events: none;
+
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 900;
+        font-style: italic;
+
+        font-size: min(4vw, 80px);
+    }
+
+    
+
+    .logo {
+        position: absolute; /* Add this line */
+        top: 50%; /* Add this line */
+        left: 50%; /* Add this line */
+        transform: translate(-50%, -50%); /* Add this line */
+        object-fit: contain;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+
+    .background {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        /* transform: scale(1.2); */
+        
+    }
+
+    .background:hover {
+        transform: scale(1.1);
+    }
 
     .fixed-size-component {
         position: relative;
         width: 100%;
-        height: 25vw;
+        height: 500px;
         color: var(--white);
-        margin: 2% 0;
+        margin: 32px 0;
         text-transform: uppercase;
-        border: 2px solid var(--white);
     }
 
     .title {
         position: relative;
-        font-size: 2.5vw;
+        font-size: 52px;
         background-color: var(--orange);
+        margin-right: 6%;
+        padding-left: 2%;
+        transition:cubic-bezier(1, 0, 0, 1) 0.3s;
+    }
+
+    .title:hover{
+        margin-right: 0;
     }
 
     .tags {
         display: flex;
         gap: 2%;
+        font-size: 20px;
     }
 
     .tag {
