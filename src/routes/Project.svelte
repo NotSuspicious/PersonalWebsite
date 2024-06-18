@@ -6,17 +6,27 @@
     export let tags: string[] = [];
     export let blogName = '';
     let href = `/devlogs/${blogName}`;
+
+    let isHovered = false;
     
 </script>
 
-<a href={href}>
     <div class="fixed-size-component">
-        <div class="img-box">
-            <img class='logo' src={logo} alt=' ' data-alt={title}/>
-            <img class='background' src={background} alt=''/>
-        </div>
+        <a href={href}>
+            <div class="img-box" 
+                on:mouseenter={() => isHovered = true} 
+                on:mouseleave={() => isHovered = false}
+            >
+                <img class='logo' src={logo} alt=' ' data-alt={title}
+                    class:img-hovered={isHovered}/>
+                <img class='background' src={background} alt=''
+                    class:img-hovered={isHovered}/>
+            </div>
+        </a>
         
-        <div class="title roboto-condensed-medium-italic">
+        
+        <div class="title roboto-condensed-medium-italic"
+            class:img-hovered={isHovered}>
             {role}
             <div class="title-underline"></div>
         </div>
@@ -26,9 +36,17 @@
             {/each}
         </div>
     </div>
-</a>
 
 <style>
+    .fixed-size-component {
+        position: relative;
+        width: 100%;
+        height: 420px;
+        color: var(--white);
+        margin: 32px 0;
+        text-transform: uppercase;
+    }
+
     .img-box {
        position: relative;
         width: 95%;
@@ -75,26 +93,34 @@
         
     }
 
+    .img-hovered.background {
+        transform: scale(1.1);
+    }
+
+    .img-hovered.logo {
+        z-index: 2;
+    }
+
+    .img-hovered.title {
+        margin-right: 0;
+    }
+
+    .logo {
+        z-index: 2;
+    }
+
 
     .background {
         object-fit: cover;
         height: 100%;
         width: 100%;
         /* transform: scale(1.2); */
+        transition:cubic-bezier(1, 0, 0, 1) 0.2s;
         
     }
 
     .background:hover {
         transform: scale(1.1);
-    }
-
-    .fixed-size-component {
-        position: relative;
-        width: 100%;
-        height: 500px;
-        color: var(--white);
-        margin: 32px 0;
-        text-transform: uppercase;
     }
 
     .title {
@@ -104,10 +130,6 @@
         margin-right: 6%;
         padding-left: 2%;
         transition:cubic-bezier(1, 0, 0, 1) 0.3s;
-    }
-
-    .title:hover{
-        margin-right: 0;
     }
 
     .tags {
@@ -131,6 +153,5 @@
         width: 100%;
         background-color: var(--orange); /* Adjust color */
     }
-
 
 </style>

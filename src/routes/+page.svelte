@@ -77,6 +77,7 @@
         padding: 0;
         background-color: var(--blue);
         overflow-x: hidden;
+
     }
 
     model-viewer {
@@ -92,8 +93,6 @@
         width: min(70%, 1080px);
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
-        margin-top: 32px;
-        margin-left: -10%;
         margin: auto;   
     }
     
@@ -115,9 +114,9 @@
     }
 
     .content {
-        width: min(calc(75%), 1300px);
+        width: min(62%, 1300px);
         margin: auto;
-        
+        padding-left: -10%;
     }
 
     img {
