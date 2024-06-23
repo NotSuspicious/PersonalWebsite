@@ -4,6 +4,7 @@
     <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.youtube.com', '_blank')}>YouTube</button>
     <button class="roboto-condensed-black-italic" on:click={() => window.open('https://itch.io', '_blank')}>Itch.Io</button>
     <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Resume</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Email</button>
     <!-- <button>Email</button> -->
 </div>
 

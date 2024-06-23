@@ -24,5 +24,6 @@ h2 {
     color: var(--white);
     font-size: 72pt;
     white-space: nowrap;
+    margin-left: -10%;
 }
 </style>

@@ -9,7 +9,6 @@
     import SectionHeader from './SectionHeader.svelte';
     import TextInsert from './TextInsert.svelte';
     import ButtonRow from './ButtonRow.svelte';
-    import Sidebar from './Sidebar.svelte';
 </script>
   
 <body>
@@ -26,10 +25,9 @@
             </div>
         </div>
         
+        
         <div class="content">
-            
             <SectionHeader text="FEATURED WORKS" />
-
             <Project 
                 title="They Shall Not Come Back"
                 role="VR Gameplay Engineer"
@@ -70,21 +68,15 @@
     }
 
     body {
-        /* padding: calc(8px + 1.5625vw);
-        margin-left: 4vw;
-        margin-right: 8vw; */
         margin: 0;
         padding: 0;
         background-color: var(--blue);
         overflow-x: hidden;
-
     }
 
     model-viewer {
-        /* margin: max(calc(1200px - vw), 0) 0; */
         width: 600px;
         height: 100%;
-        /* margin-left: -200px; */
     }
     
     .landing-page {
@@ -114,9 +106,8 @@
     }
 
     .content {
-        width: min(62%, 1300px);
+        width: min(60%, 1300px);
         margin: auto;
-        padding-left: -10%;
     }
 
     img {

@@ -1,17 +1,3 @@
-<script>
-    import { onMount } from 'svelte';
-    export let text = '';
-    $: text = text.replace(/\n/g, '<br>');
-
-    function parseText(text) {
-        return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
-    }
-
-    onMount(() => {
-        text = parseText(text);
-    });
-</script>
-
 <div class="text-box roboto-regular">
     <p>I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer science @ USC Games.
         <br/>
@@ -23,22 +9,21 @@
     </p>
 </div>
 
-<style>
-    
+<style> 
     strong {
         color: var(--highlight);
         text-transform: uppercase;
         font-style: italic;
         letter-spacing: 0px;
-        font-family: "Roboto Condensed", sans-serif;
+        font-family: "Roboto", sans-serif;
     }
 
     .text-box {
         display: flex;
         position: relative;
-        margin: 12px 0;
+        margin: 0 0;
         color: var(--white);
-        font-size: 16pt;
+        font-size: 15pt;
     }
 
     .text-box::before {

@@ -41,7 +41,7 @@
     .fixed-size-component {
         position: relative;
         width: 100%;
-        height: 420px;
+        height: 400px;
         color: var(--white);
         margin: 32px 0;
         text-transform: uppercase;
@@ -51,9 +51,9 @@
        position: relative;
         width: 95%;
         height: 75%;
-        left: 5%;
+        left: 0;
 
-        margin-bottom: -16px;
+        margin-bottom: -24px;
         overflow: hidden;
         
     }   
@@ -94,7 +94,7 @@
     }
 
     .img-hovered.background {
-        transform: scale(1.1);
+        transform: scale(1.05);
     }
 
     .img-hovered.logo {
@@ -102,7 +102,7 @@
     }
 
     .img-hovered.title {
-        margin-right: 0;
+        margin-right: 5%;
     }
 
     .logo {
@@ -114,22 +114,18 @@
         object-fit: cover;
         height: 100%;
         width: 100%;
-        /* transform: scale(1.2); */
-        transition:cubic-bezier(1, 0, 0, 1) 0.2s;
+        transition:ease-in-out 0.15s;
         
-    }
-
-    .background:hover {
-        transform: scale(1.1);
     }
 
     .title {
         position: relative;
         font-size: 52px;
         background-color: var(--orange);
-        margin-right: 6%;
+        margin-right: 10%;
+        margin-left: -5%;
         padding-left: 2%;
-        transition:cubic-bezier(1, 0, 0, 1) 0.3s;
+        transition:cubic-bezier(1, 0, 0, 1) 0.15s;
     }
 
     .tags {
