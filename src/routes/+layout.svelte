@@ -58,5 +58,19 @@
         font-weight: 400;
         letter-spacing: 0.25px;
     }
+    :root {
+        --blue: #358BAF;
+        /* --orange: #d48d21; */
+        --orange: #C17F1C;
+        --white: #FFFFFF;
+        --highlight: #F2BC6B;
+    }
+
+    :global(body) {
+        margin: 0;
+        padding: 0;
+        background-color: var(--blue);
+        overflow-x: hidden;
+    }
     
 </style>

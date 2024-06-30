@@ -14,7 +14,7 @@
         position: relative;
         padding: 0 0;
         margin-top: 28px;
-        margin-left: -60px;
+        margin-left: 0px;
         width: calc(100% + 96px);
 
     }

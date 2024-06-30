@@ -2,11 +2,18 @@
     export let text = '';
 </script>
   
-<h2 class="roboto-condensed-black-italic">
+<h2 class="header roboto-condensed-black-italic">
     <span class="underline">{text}</span>
 </h2>
 
 <style>
+
+
+.header {
+    width: min(70%, 1080px);
+    margin: auto;
+}
+
 .underline {
     position: relative;
 }
@@ -24,6 +31,5 @@ h2 {
     color: var(--white);
     font-size: 72pt;
     white-space: nowrap;
-    margin-left: -10%;
 }
 </style>

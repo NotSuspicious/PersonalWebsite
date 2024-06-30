@@ -13,6 +13,7 @@
 
     <div class="fixed-size-component">
         <a href={href}>
+            <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div class="img-box" 
                 on:mouseenter={() => isHovered = true} 
                 on:mouseleave={() => isHovered = false}
@@ -41,9 +42,9 @@
     .fixed-size-component {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 360px;
         color: var(--white);
-        margin: 32px 0;
+        margin: 64px 0;
         text-transform: uppercase;
     }
 
