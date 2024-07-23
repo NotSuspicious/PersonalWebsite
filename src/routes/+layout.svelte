@@ -19,6 +19,14 @@
         min-height: 100vh;
     }
 
+    :global(strong) {
+        color: var(--highlight);
+        text-transform: uppercase;
+        font-style: italic;
+        letter-spacing: 0px;
+        font-family: "Roboto", sans-serif;
+    }
+
     .content-wrap {
         flex: 1 0 auto; /* This will make the content wrap grow if there's space available */
     }
@@ -44,6 +52,12 @@
     :global(.roboto-condensed-medium-italic) {
         font-family: "Roboto Condensed", sans-serif;
         font-weight: 500;
+        font-style: italic;
+    }
+
+    :global(.roboto-condensed-bold-italic) {
+        font-family: "Roboto Condensed", sans-serif;
+        font-weight: 600;
         font-style: italic;
     }
 

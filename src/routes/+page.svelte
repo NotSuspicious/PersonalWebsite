@@ -7,6 +7,7 @@
 <script>
     import Project from './Project.svelte';
     import SectionHeader from './SectionHeader.svelte';
+    import SectionHeaderSmall from './SectionHeader-small.svelte';
     import TextInsert from './TextInsert.svelte';
     import ButtonRow from './ButtonRow.svelte';
     import List from './List.svelte';
@@ -17,7 +18,15 @@
         <div class="landing-page">
             <div class="landing-page-column">
                 <div class="header"><img class="header-img" src="/WilliamZhao.svg" alt="William Zhao" /></div>
-                <TextInsert/>
+                <TextInsert text=
+                    'I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer science @ USC Games.
+                    <br/>
+                    <br/>
+                    My greatest passion is leveraging my technical and creative skills to create multimedia experiences.
+                    <br/>
+                    <br/>
+                    Whether that be through <strong>PC GAMES</strong>, <strong>VR EXPERIENCES</strong>, or <strong>PHYSICS SIMULATIONS</strong>, you can always catch me working on something I love!'    
+                />
                 <ButtonRow/>
             </div>
             
@@ -25,14 +34,11 @@
                 <model-viewer id="reveal" loading="eager" src="/models/WilliamIdle.glb" camera-controls disable-zoom poster="/models/poster.webp" autoplay/>     
             </div>
         </div>
-        
-        <SectionHeader text="SKILLS" />
-        <div>
-            <List></List>
-        </div>
 
-        <SectionHeader text="FEATURED WORKS" />
         <div class="content">
+            <SectionHeaderSmall text="SKILLS" />
+            <List/>
+            <SectionHeader text="FEATURED WORKS" />
             <Project 
             title="They Shall Not Come Back"
             role="VR Gameplay Engineer"
@@ -98,7 +104,7 @@
     }
 
     .content {
-        width: min(55%, 1300px);
+        width: min(70%, 1080px);
         margin: auto;
     }
 

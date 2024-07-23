@@ -11,7 +11,7 @@
 
 .header {
     width: 100%;
-    margin: auto;
+    margin: 0;
 }
 
 .underline {
@@ -21,15 +21,15 @@
     content: '';
     position: absolute;
     left: 0;
-    bottom: 12px; /* Adjust underline distance */
-    height: 12px; /* Adjust thickness */
+    bottom: 6px; /* Adjust underline distance */
+    height: 6px; /* Adjust thickness */
     width: 100%;
     background-color: var(--orange); /* Adjust color */
 }
 
 h2 {
     color: var(--white);
-    font-size: 72pt;
+    font-size: 36pt;
     white-space: nowrap;
 }
 </style>

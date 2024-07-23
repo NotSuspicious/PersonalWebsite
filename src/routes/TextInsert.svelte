@@ -1,11 +1,11 @@
+<script>
+    export let text = '';
+</script>
+
 <div class="text-box roboto-regular">
-    <p>I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer science @ USC Games.
-        <br/>
-        <br/>
-        My greatest passion is leveraging my technical and creative skills to create multimedia experiences.
-        <br/>
-        <br/>
-        Whether that be through <strong>PC GAMES</strong>, <strong>VR EXPERIENCES</strong>, or <strong>PHYSICS SIMULATIONS</strong>, you can always catch me working on something I love!
+    <p>
+        {@html text}
+        
     </p>
 </div>
 
