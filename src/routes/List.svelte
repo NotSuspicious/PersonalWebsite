@@ -27,7 +27,7 @@
         
         <div class="skill">
             <h3 class="roboto-condensed-bold-italic">
-                LANGUAGES
+                SOFTWARE
             </h3>
             <ul class="roboto-regular">
                 <li>Photoshop</li>

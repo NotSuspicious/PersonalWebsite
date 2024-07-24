@@ -103,7 +103,7 @@
     }
 
     .img-hovered.title {
-        margin-right: 5%;
+        margin-right: 10%;
     }
 
     .logo {
@@ -123,6 +123,8 @@
         position: relative;
         font-size: 52px;
         background-color: var(--orange);
+        height: 36px;
+        margin-bottom: 16px;
         margin-right: 10%;
         margin-left: -5%;
         padding-left: 2%;

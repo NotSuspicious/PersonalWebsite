@@ -5,7 +5,6 @@
 <div class="text-box roboto-regular">
     <p>
         {@html text}
-        
     </p>
 </div>
 
