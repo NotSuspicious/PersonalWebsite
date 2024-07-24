@@ -2,6 +2,7 @@
     export let title = '';
     export let role = '';
     export let background = '';
+    export let award = '';
     export let logo = '';
     export let tags: string[] = [];
     export let blogName = '';
@@ -12,6 +13,7 @@
 </script>
 
     <div class="fixed-size-component">
+        <img class='award' src={award} alt=''/>
         <a href={href}>
             <!-- svelte-ignore a11y-no-static-element-interactions -->
             <div class="img-box" 
@@ -50,11 +52,9 @@
 
     .img-box {
        position: relative;
-        width: 95%;
+        width: 100%;
         height: 75%;
         left: 0;
-
-        margin-bottom: -24px;
         overflow: hidden;
         
     }   
@@ -80,8 +80,6 @@
 
         font-size: min(4vw, 80px);
     }
-
-    
 
     .logo {
         position: absolute; /* Add this line */
@@ -110,6 +108,15 @@
         z-index: 2;
     }
 
+    .award {
+        position: absolute;
+        top: -18px;
+        right: -3%;
+        height: 25%;
+        object-fit: cover;
+        z-index: 1;
+    }
+
 
     .background {
         object-fit: cover;
@@ -124,9 +131,10 @@
         font-size: 52px;
         background-color: var(--orange);
         height: 36px;
-        margin-bottom: 16px;
+        margin-top: -18px;
+        margin-bottom: 18px;
         margin-right: 10%;
-        margin-left: -5%;
+        margin-left: -3%;
         padding-left: 2%;
         transition:cubic-bezier(1, 0, 0, 1) 0.15s;
     }

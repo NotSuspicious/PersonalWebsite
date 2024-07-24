@@ -39,6 +39,7 @@
             role="VR Gameplay Engineer"
             background="/images/TSNCB-Background.png"
             logo="/images/TSNCB-Logo.png"
+            award="/images/TSNCB-Award.png"
             tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
             blogName="they-shall-not-come-back"
             />
