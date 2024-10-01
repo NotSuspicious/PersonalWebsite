@@ -7,6 +7,7 @@
     import TextInsert from './TextInsert.svelte';
     import ButtonRow from './ButtonRow.svelte';
     import List from './List.svelte';
+    import Navbar from './Navbar.svelte';
 </script>
   
 <body>

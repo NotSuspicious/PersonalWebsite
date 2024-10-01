@@ -44,7 +44,7 @@
     .container {
         display: flex;
         justify-content: space-between; /* Or use space-around */
-        margin: 12px 0 36px 0;
+        margin: 24px 0 72px 0;
     }
 
     h3 {

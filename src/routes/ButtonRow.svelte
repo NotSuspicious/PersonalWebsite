@@ -1,10 +1,10 @@
 <div class="buttons">
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.linkedin.com', '_blank')}>LinkedIn</button>
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://github.com', '_blank')}>GitHub</button>
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.youtube.com', '_blank')}>YouTube</button>
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://itch.io', '_blank')}>Itch.Io</button>
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Resume</button>
-    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.example.com/resume.pdf', '_blank')}>Email</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.linkedin.com/in/williamzhaodesign/', '_blank')}>LinkedIn</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://github.com/NotSuspicious', '_blank')}>GitHub</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://www.youtube.com/@WilliamZhao', '_blank')}>YouTube</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('mailto:williezhao123@gmail.com', '_blank')}>Email</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://drive.google.com/file/d/15OCYBA9wQRsYm-zb0yh-L8WzpNuRZpOe/view?usp=sharing', '_blank')}>Resume</button>
+    <button class="roboto-condensed-black-italic" on:click={() => window.open('https://qwer2999.itch.io/', '_blank')}>Itch.Io</button>
     <!-- <button>Email</button> -->
 </div>
 

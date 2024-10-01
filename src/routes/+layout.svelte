@@ -5,11 +5,11 @@
 </head>
 
 <script>
-    import Sidebar from './Sidebar.svelte';
+    import Navbar from "./Navbar.svelte"; 
 </script>
 
 <body class="page-container">
-    <Sidebar/>
+    <Navbar/>
 
     <div class="content-wrap">
         <slot/>
