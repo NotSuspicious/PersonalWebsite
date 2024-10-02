@@ -20,7 +20,6 @@
     .text-box {
         display: flex;
         position: relative;
-        margin: 0 0;
         color: var(--white);
         font-size: 15pt;
     }

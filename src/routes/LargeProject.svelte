@@ -4,7 +4,6 @@
     export let background = '';
     export let award = '';
     export let logo = '';
-    export let tags: string[] = [];
     export let blogName = '';
     let href = `/devlogs/${blogName}`;
 
@@ -33,27 +32,27 @@
             {role}
             <div class="title-underline"></div>
         </div>
-        <div class="tags roboto-condensed-regular-italic">
+        <!-- <div class="tags roboto-condensed-regular-italic">
             {#each tags as tag}
                 <span class="tag">{tag}</span>
             {/each}
-        </div>
+        </div> -->
     </div>
 
 <style>
     .fixed-size-component {
         position: relative;
         width: 100%;
-        height: 400px;
+        height: 360px;
         color: var(--white);
-        margin: 64px 0;
+        margin-bottom: 100px;
         text-transform: uppercase;
     }
 
     .img-box {
        position: relative;
         width: 100%;
-        height: 75%;
+        height: 100%;
         left: 0;
         overflow: hidden;
         
@@ -101,7 +100,7 @@
     }
 
     .img-hovered.title {
-        margin-right: 10%;
+        margin-right: 24px;
     }
 
     .logo {
@@ -133,32 +132,10 @@
         height: 36px;
         margin-top: -18px;
         margin-bottom: 18px;
-        margin-right: 10%;
-        margin-left: -3%;
-        padding-left: 2%;
+        margin-right: 24px;
+        margin-left: -14px;
+        padding-left: 24px;
         transition:cubic-bezier(1, 0, 0, 1) 0.15s;
-    }
-
-    .tags {
-        display: flex;
-        gap: 2%;
-        font-size: 20px;
-    }
-
-    .tag {
-        position: relative;
-        margin: 1%;
-        line-height: 1.5;
-    }
-
-    .tag:after {
-        content: '';
-        position: absolute;
-        left: 0;
-        bottom: 1px; /* Adjust underline distance */
-        height: 5px; /* Adjust thickness */
-        width: 100%;
-        background-color: var(--orange); /* Adjust color */
     }
 
 </style>

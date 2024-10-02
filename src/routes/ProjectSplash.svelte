@@ -3,10 +3,14 @@
     export let background = '';
     export let award = '';
     export let logo = '';
+    import BackButton from "./BackButton.svelte";
 </script>
 
 
     <div class="fixed-size-component">
+        <div class="back-button">
+            <BackButton/>
+        </div>
         <img class='award' src={award} alt=''/>
         <div class="img-box">
             <img class='logo' src={logo} alt=' ' data-alt={title}/>
@@ -61,12 +65,20 @@
 
     .award {
         position: absolute;
-        top: -30px;
-        right: -30px;
+        top: -24px;
+        right: -24px;
         height: 30%;
         object-fit: cover;
         z-index: 1;
     }
+
+    .back-button {
+        position: absolute;
+        top: -24px;
+        left: -24px;
+        z-index: 1;
+    }
+
 
     .logo {
         position: absolute; /* Add this line */
@@ -91,9 +103,9 @@
         background-color: var(--orange);
         color: white;
         height: 36px;
-        margin-top: -40px;
+        margin-top: -36px;
         margin-right: 10%;
-        margin-left: -50px;
+        margin-left: -24px;
         padding-left: 2%;
     }
 </style>

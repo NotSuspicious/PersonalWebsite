@@ -47,27 +47,10 @@
         margin: 24px 0 72px 0;
     }
 
-    h3 {
-        font-size: 22pt;
-        color: var(--highlight);
-        white-space: nowrap;
-        margin: 0 0 6px 0;
-    }
-
     .skill {
         color: var(--orange);
     }
 
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        color: var(--white);
-        font-size: 14pt;
-    }
-
-    li {
-        margin: 0 0 2px 0;
-    }
+    
     
 </style>

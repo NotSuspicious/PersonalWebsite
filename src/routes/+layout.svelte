@@ -78,6 +78,79 @@
         font-weight: 400;
         letter-spacing: 0.25px;
     }
+
+    :global(.roboto-bold) {
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        letter-spacing: 0.25px;
+    }
+
+    :global(h3) {
+        font-size: 22pt;
+        color: var(--highlight);
+        white-space: nowrap;
+        margin: 0 0 6px 
+    }
+    :global(ul) {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        color: var(--white);
+        font-size: 14pt;
+    }
+
+    :global(li) {
+        margin: 0 0 2px 0;
+    }
+
+    :global(button) {
+        color: var(--white); /* Example link color */
+        text-decoration: none;
+        position: relative;
+        padding: 8px 0px;
+        font-size: 24px; /* Adjust font size as needed */
+        display: inline-block;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    :global(button)::before {
+        content: '';
+        background-color: var(--orange);
+        position: absolute;
+        bottom: 0; /* Position the line at the bottom of the link */
+        left: 0;
+        width: 100%;
+        height: 0px; /* Initial height of the line */
+        transform-origin: bottom right; /* Start the animation from the right */
+        transition: height 0.1s ease-in-out; /* Smooth transition */
+    }
+
+    :global(button:hover)::before {
+        height: 6px;
+    }
+
+    :global(.button-large) {
+        font-size: 32px; /* Larger font size */
+    }
+
+    :global(.button-small) {
+        font-size: 24px; /* Smaller font size */
+    }
+
+    :global(.image) {
+        width: 100%;
+        height: 300px;
+        object-fit: cover; /* Ensure the image fills the container while maintaining aspect ratio */
+        box-shadow: 8px 8px var(--orange); /* Orange drop shadow */
+        transition: box-shadow 0.1s ease-in-out;
+    }
+
+    :global(.image)::hover {
+        box-shadow: 12px 12px var(--orange);
+    }
+
     :root {
         --blue: #358BAF;
         /* --orange: #d48d21; */

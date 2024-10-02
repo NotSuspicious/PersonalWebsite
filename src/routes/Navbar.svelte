@@ -4,8 +4,8 @@
     </div>
     <div class="navbar-right">
         <a href="/">Home</a>
-        <a href="/projects">Projects</a>
-        <a href="/contact">Tech Art</a>
+        <a href="/#projects">Projects</a>
+        <!-- <a href="/contact">Tech Art</a> -->
         <!-- Add more links as needed -->
     </div>
 </nav>
@@ -15,7 +15,7 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        width: 70%;
+        width: min(80%, 1200px);
         margin: auto;
         padding: 24px 0px;
         color: white; /* Example text color */

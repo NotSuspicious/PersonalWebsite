@@ -1,13 +1,13 @@
 
 
 <script>
+    import LargeProject from './LargeProject.svelte';
     import Project from './Project.svelte';
     import SectionHeader from './SectionHeader.svelte';
     import SectionHeaderSmall from './SectionHeader-small.svelte';
     import TextInsert from './TextInsert.svelte';
     import ButtonRow from './ButtonRow.svelte';
     import List from './List.svelte';
-    import Navbar from './Navbar.svelte';
 </script>
   
 <body>
@@ -34,8 +34,9 @@
         <div class="content">
             <SectionHeaderSmall text="SKILLS" />
             <List/>
-            <SectionHeader text="FEATURED WORKS" />
-            <Project 
+            <div id="projects"> <SectionHeader text="PROJECTS" /> </div>
+            
+            <LargeProject 
             title="They Shall Not Come Back"
             role="VR Gameplay Engineer"
             background="/images/TSNCB-Background.png"
@@ -44,29 +45,54 @@
             tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
             blogName="they-shall-not-come-back"
             />
-            <Project 
-            title="Computational Fluid Dynamics"
-            role="Engineer"
-            background="/images/CFD-Background.png"
-            logo="/images/CFD-Logo.png"
-            tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
-            blogName="computational-fluid-dynamics"
-            />
-            <Project 
-            title="Rat Pack"
-            role="Director"
-            background="/images/RatPack-Background.png"
-            logo="/images/RatPack-Logo.png"
-            tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
-            blogName="ratpack"
-            />
+
+            <div class="project-grid">
+                <LargeProject 
+                title="Computational Fluid Dynamics"
+                role="Engineer"
+                background="/cfd/background.png"
+                logo="/cfd/logo.png"
+                blogName="computational-fluid-dynamics"
+                />
+                <LargeProject 
+                title="Unity Rendering"
+                role="Technical Artist"
+                background="/unityurp/background.png"
+                logo="/unityurp/logo.png"
+                blogName="unity-rendering"
+                />
+                <!-- <LargeProject 
+                title="Scarecrow"
+                role="Technical Artist"
+                background="/images/RatPack-Background.png"
+                logo=""
+                blogName="scarecrow"
+                />
+                <LargeProject 
+                title="Iron Testament"
+                role="Technical Artist"
+                background="/images/RatPack-Background.png"
+                logo=""
+                blogName="rateconomy"
+                /> -->
+                <!-- <LargeProject 
+                title="DONUTS!"
+                role="Technical Artist"
+                background="/images/RatPack-Background.png"
+                logo=""
+                blogName="ratpack"
+                /> -->
+                
+            </div>
+            
         </div>
 </body>
 
 <style>
     model-viewer {
-        width: 600px;
+        width: 100%;
         height: 100%;
+        align-items: right;
     }
     
     .landing-page {
@@ -76,6 +102,7 @@
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
         margin: auto;   
+        gap: 24px;
     }
     
     .header {
@@ -87,17 +114,29 @@
         height: auto;
     }
 
-    @media (max-width: 992px) { /* This will apply the styles inside the braces when the window is narrower than 600px */
+    @media (max-width: 992px) {
         .landing-page {
             grid-template-columns: 1fr;
             grid-template-rows: 1fr 1fr;
             margin: 0 10vw;
+        }
+
+        .project-grid {
+            grid-template-columns: 1fr; /* Change to a single column */
+            gap: 24px 0; /* Adjust gap for single column layout */
         }
     }
 
     .content {
         width: min(70%, 1080px);
         margin: auto;
+        padding-bottom: 100px;
+    }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0px 72px;
     }
 
     img {

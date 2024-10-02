@@ -1,6 +1,5 @@
 <script>
     import ProjectSplash from '../../ProjectSplash.svelte';
-    import BackButton from '../../BackButton.svelte';
     import TextInsert from '../../TextInsert.svelte';
     import Button from '../../Button.svelte';
     import SectionHeader from '../../SectionHeader-small-long.svelte';
@@ -22,9 +21,6 @@
                 '/>
                 <div class='grid-container-three'>
                     <div class="grid-item">
-                        <div>
-                            <Button text="AWARD" className="button-large" link="https://www.bafta.org/supporting-talent/the-2024-yugo-bafta-student-awards-longlist"/>
-                        </div>
                         <Button text="TRAILER" className="button-large" link="https://vimeo.com/994876347?autoplay=1&muted=1&stream_id=Y2xpcHN8MTQ3NzIxNjQwfGlkOmRlc2N8W10%3D"/>
                         <Button text="LEARN MORE" className="button-large" link="https://www.selenyxie.com/tsnc-presskit"/>
                     </div>
@@ -125,7 +121,7 @@
     }
 
     .grid-item {
-        
+        /* Default styles for grid items */
     }
 
     a {
