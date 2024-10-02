@@ -3,32 +3,32 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&amp;family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap" rel="stylesheet" />
 
-        <!-- Primary Meta Tags -->
-    <title>William Zhao's Portfolio</title>
-    <meta name="title" content="William Zhao's Portfolio" />
-    <meta name="description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
+   	<!-- HTML Meta Tags -->
+<title>William Zhao's Portfolio</title>
+<meta name="description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
 
-    " />
+    ">
 
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.williamz.design/" />
-    <meta property="og:title" content="William Zhao's Portfolio" />
-    <meta property="og:description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
+<!-- Facebook Meta Tags -->
+<meta property="og:url" content="https://www.williamz.design">
+<meta property="og:type" content="website">
+<meta property="og:title" content="William Zhao's Portfolio">
+<meta property="og:description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
 
-    " />
-    <meta property="og:image" content="/static/william.png" />
+    ">
+<meta property="og:image" content="https://opengraph.b-cdn.net/production/images/039fc191-a484-4f0a-8b11-3a6f206200ce.png?token=8j_87Xnycw4omjonMQPAljjJHn4TiTmqcPSsEujDV30&height=667&width=1200&expires=33263898503">
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image" />
-    <meta property="twitter:url" content="https://www.williamz.design/" />
-    <meta property="twitter:title" content="William Zhao's Portfolio" />
-    <meta property="twitter:description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
+<!-- Twitter Meta Tags -->
+<meta name="twitter:card" content="summary_large_image">
+<meta property="twitter:domain" content="williamz.design">
+<meta property="twitter:url" content="https://www.williamz.design">
+<meta name="twitter:title" content="William Zhao's Portfolio">
+<meta name="twitter:description" content="I’m William, a Game Engineer with a love for Technical Art. I’m currently studying computer science @ USC Games.
 
-    " />
-    <meta property="twitter:image" content="/static/william.png" />
+    ">
+<meta name="twitter:image" content="https://opengraph.b-cdn.net/production/images/039fc191-a484-4f0a-8b11-3a6f206200ce.png?token=8j_87Xnycw4omjonMQPAljjJHn4TiTmqcPSsEujDV30&height=667&width=1200&expires=33263898503">
 
-    <!-- Meta Tags Generated with https://metatags.io -->
+<!-- Meta Tags Generated via https://www.opengraph.xyz -->
 </head>
 
 <script>
