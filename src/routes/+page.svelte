@@ -97,12 +97,12 @@
     
     .landing-page {
         display: grid;
-        height: min(1080px, 100vh);
         width: min(70%, 1080px);
         grid-template-columns: 50% 50%;
         grid-template-rows: 1fr;
         margin: auto;   
         gap: 24px;
+        padding-bottom: 100px;
     }
     
     .header {
