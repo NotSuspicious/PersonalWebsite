@@ -15,10 +15,10 @@
             <div class="landing-page-column">
                 <div class="header"><img class="header-img" src="/WilliamZhao.svg" alt="William Zhao" /></div>
                 <TextInsert text=
-                    'I’m William, a <strong>Game Developer</strong>, <strong>TECHNICAL ARTIST</strong>, and a <strong>MUSICIAN</strong>. I’m studying computer science @ USC Games.
+                    'I’m William, a <strong>Game Engineer</strong> with a love for <strong>TECHNICAL ART</strong>. I’m currently studying computer science @ USC Games.
                     <br/>
                     <br/>
-                    My greatest passion is leveraging my technical and creative skills to create multimedia experiences.
+                    My greatest passion is leveraging my technical and creative skills to create polished and visually stunning games.
                     <br/>
                     <br/>
                     Whether that be through <strong>PC GAMES</strong>, <strong>VR EXPERIENCES</strong>, or <strong>PHYSICS SIMULATIONS</strong>, you can always catch me working on something I love!'    
