@@ -14,8 +14,14 @@
         border: none;
         cursor: pointer;
         text-transform: uppercase;
+        position: relative;
+        box-shadow: 5px 5px 0 white;
+        transition: box-shadow 0.1s;
     }
 
+    .back-button:hover {
+        box-shadow: 0 0 0 var(--white);
+    }
 </style>
 
 <button class="back-button roboto-condensed-medium-italic" on:click={goBack}>

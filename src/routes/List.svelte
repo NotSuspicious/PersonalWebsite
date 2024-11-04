@@ -9,6 +9,8 @@
                 <li>Unity</li>
                 <li>OpenGL</li>
                 <li>Blender</li>
+                <li>Maya</li>
+                <li>Houdini</li>
             </ul>
         </div>
 
@@ -21,7 +23,8 @@
                 <li>C++ 11</li>
                 <li>GLSL</li>
                 <li>Python</li>
-                <li>Git, Perforce</li>
+                <li>Perforce</li>
+                <li>Git</li>
             </ul>
         </div>
         

@@ -61,10 +61,11 @@
             <div class='grid-container'>
                 <div class="grid-item">
                     <TextInsert text="
-                        To gain experience with <strong>Houdini</strong> and their<strong>FLIP Solver</strong>, I made this small render!
+                        To gain experience with <strong>Houdini</strong> and their <strong>FLIP Solver</strong>, I made this small render!
                         <br>
                         <br> - Learned how to use Houdini's <strong>FLIP Fluids</strong> to simulate fluid dynamics.
                         <br> - Used Solaris to render fluids and glass.
+                        <br> - Used <strong>Logic Pro</strong> to design the sound effects.
                     "/>
                 </div>
                 <div class="grid-item">

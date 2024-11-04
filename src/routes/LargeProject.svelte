@@ -43,9 +43,9 @@
     .fixed-size-component {
         position: relative;
         width: 100%;
-        height: 360px;
+        height: 320px;
         color: var(--white);
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         text-transform: uppercase;
     }
 

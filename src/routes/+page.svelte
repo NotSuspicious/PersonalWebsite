@@ -15,7 +15,7 @@
             <div class="landing-page-column">
                 <div class="header"><img class="header-img" src="/WilliamZhao.svg" alt="William Zhao" /></div>
                 <TextInsert text=
-                    'I’m William, a <strong>Game Engineer</strong> with a love for <strong>TECHNICAL ART</strong>. I’m currently studying computer science @ USC Games.
+                    'I’m William, a <strong>Game Engineer</strong> and a <strong>TECHNICAL ARTIST</strong>. I’m currently studying computer science @ USC Games.
                     <br/>
                     <br/>
                     My greatest passion is leveraging my technical and creative skills to create polished and visually stunning games.
@@ -47,27 +47,28 @@
             />
 
             <div class="project-grid">
-                <LargeProject 
-                title="Computational Fluid Dynamics"
-                role="Engineer"
-                background="/cfd/background.png"
-                logo="/cfd/logo.png"
-                blogName="computational-fluid-dynamics"
+                <LargeProject
+                title="Scarecrow"
+                role="Technical Artist"
+                background="/scarecrow/ScarecrowBackground.jpg"
+                logo="/scarecrow/ScarecrowLogo.png"
+                blogName="scarecrow"
                 />
-                <LargeProject 
+                <LargeProject
                 title="Unity Rendering"
                 role="Technical Artist"
                 background="/unityurp/background.png"
                 logo="/unityurp/logo.png"
                 blogName="unity-rendering"
                 />
-                <!-- <LargeProject 
-                title="Scarecrow"
-                role="Technical Artist"
-                background="/images/RatPack-Background.png"
-                logo=""
-                blogName="scarecrow"
+                <LargeProject
+                title="Computational Fluid Dynamics"
+                role="Engineer"
+                background="/cfd/background.png"
+                logo="/cfd/logo.png"
+                blogName="computational-fluid-dynamics"
                 />
+                <!--
                 <LargeProject 
                 title="Iron Testament"
                 role="Technical Artist"
