@@ -1,4 +1,9 @@
-<div>
+<script>
+import SectionHeaderSmall from "./SectionHeader-small.svelte";
+</script>
+
+<div class="Skills">
+    <SectionHeaderSmall text="SKILLS" />
     <div class="container">
         <div class="skill">
             <h3 class=" roboto-condensed-bold-italic">
@@ -27,7 +32,7 @@
                 <li>Git</li>
             </ul>
         </div>
-        
+
         <div class="skill">
             <h3 class="roboto-condensed-bold-italic">
                 SOFTWARE
@@ -45,8 +50,9 @@
 
 <style>
     .container {
-        display: flex;
-        justify-content: space-between; /* Or use space-around */
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 24px;
         margin: 24px 0 72px 0;
     }
 
@@ -54,6 +60,9 @@
         color: var(--orange);
     }
 
-    
-    
+    @media (max-width: 992px) {
+        .Skills {
+            display: none;
+        }
+    }
 </style>

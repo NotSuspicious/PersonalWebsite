@@ -127,7 +127,7 @@
 
     .title {
         position: relative;
-        font-size: 52px;
+        font-size: clamp(32px, 8vw, 52px);
         background-color: var(--orange);
         height: 36px;
         margin-top: -18px;

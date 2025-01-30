@@ -33,4 +33,17 @@ h2 {
     font-size: 72pt;
     white-space: nowrap;
 }
+
+@media (max-width: 580px)
+{
+    h2 {
+        font-size: 32pt;
+    }
+    .underline::after {
+        left: 0;
+        bottom: 5px; /* Adjust underline distance */
+        height: 6px; /* Adjust thickness */
+        width: 100%;
+    }
+}
 </style>

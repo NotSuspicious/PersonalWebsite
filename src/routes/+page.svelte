@@ -26,13 +26,12 @@
                 <ButtonRow/>
             </div>
             
-            <div class="landing-page-column">
+            <div id="model" class="landing-page-column">
                 <model-viewer id="reveal" loading="eager" src="/models/WilliamIdle.glb" camera-controls disable-zoom poster="/models/poster.webp" autoplay/>     
             </div>
         </div>
 
         <div class="content">
-            <SectionHeaderSmall text="SKILLS" />
             <List/>
             <div id="projects"> <SectionHeader text="PROJECTS" /> </div>
             
@@ -55,21 +54,21 @@
                 blogName="scarecrow"
                 />
                 <LargeProject
-                title="Unity Rendering"
-                role="Technical Artist"
-                background="/unityurp/background.png"
-                logo="/unityurp/logo.png"
-                blogName="unity-rendering"
-                />
-                <LargeProject
                 title="Computational Fluid Dynamics"
                 role="Engineer"
                 background="/cfd/background.png"
                 logo="/cfd/logo.png"
                 blogName="computational-fluid-dynamics"
                 />
+                <LargeProject
+                title="Unity Rendering"
+                role="Technical Artist"
+                background="/unityurp/background.png"
+                logo="/unityurp/logo.png"
+                blogName="unity-rendering"
+                />
                 <!--
-                <LargeProject 
+                <LargeProject
                 title="Iron Testament"
                 role="Technical Artist"
                 background="/images/RatPack-Background.png"
@@ -90,6 +89,7 @@
 </body>
 
 <style>
+
     model-viewer {
         width: 100%;
         height: 100%;
@@ -105,26 +105,36 @@
         gap: 24px;
         padding-bottom: 100px;
     }
+
+    .project-grid {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        gap: 0px 72px;
+    }
     
     .header {
         margin: 48px 0;
     }
 
     .header-img {
-        width: 550px;
+        width: clamp(100px, 80vw, 550px);
         height: auto;
     }
 
     @media (max-width: 992px) {
         .landing-page {
             grid-template-columns: 1fr;
-            grid-template-rows: 1fr 1fr;
+            grid-template-rows: 1fr;
             margin: 0 10vw;
         }
 
         .project-grid {
-            grid-template-columns: 1fr; /* Change to a single column */
-            gap: 24px 0; /* Adjust gap for single column layout */
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr;
+        }
+
+        #model {
+            display: none;
         }
     }
 
@@ -132,12 +142,6 @@
         width: min(70%, 1080px);
         margin: auto;
         padding-bottom: 100px;
-    }
-
-    .project-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 0px 72px;
     }
 
     img {
