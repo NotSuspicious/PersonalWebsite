@@ -109,9 +109,9 @@
 
     .award {
         position: absolute;
-        top: -18px;
+        top: -45px;
         right: -3%;
-        height: 25%;
+        height: 40%;
         object-fit: cover;
         z-index: 1;
     }

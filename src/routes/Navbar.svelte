@@ -3,9 +3,7 @@
         <span class="brand">William's Portfolio</span>
     </div>
     <div class="navbar-right">
-        <a href="/">Home</a>
         <a href="/#projects">Projects</a>
-        <a href="https://www.figma.com/design/H0VXR9xVJcrl9V16w4jLsF/UI%2FUX-Portfolio?node-id=0-1&t=qV0suehV9Wq4lGOd-1" target="_blank">UI/UX</a>
     </div>
 </nav>
 
@@ -38,7 +36,7 @@
         text-decoration: none;
         position: relative;
         padding: 8px 0px;
-        font-size: 24px; /* Adjust font size as needed */
+        font-size: 32px; /* Adjust font size as needed */
     }
 
     a:hover {

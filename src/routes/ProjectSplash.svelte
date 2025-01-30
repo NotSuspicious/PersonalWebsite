@@ -67,7 +67,7 @@
         position: absolute;
         top: -24px;
         right: -24px;
-        height: 30%;
+        height: 40%;
         object-fit: cover;
         z-index: 1;
     }

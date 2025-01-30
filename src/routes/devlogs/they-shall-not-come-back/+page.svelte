@@ -18,13 +18,10 @@
         <div class='grid-container'>
             <div class="grid-item">
                 <TextInsert text='
-                    <strong>THEY SHALL NOT COME BACK</strong> is a narrative-driven VR interactive experience where you play the lingering soul of a teenage soldier who is killed in WWI and have to reconnect with his family in NYC one last time before finding peace. 
+                    <strong>THEY SHALL NOT COME BACK</strong> is a narrative-driven VR interactive experience where you play the lingering soul of a teenage soldier who is killed in WWI. Scroll down to learn more about my role and the tools I used!
                 '/>
                 <div class='grid-container-three'>
                     <div class="grid-item">
-                        <div>
-                            <Button text="AWARD" className="button-large" link="https://www.bafta.org/supporting-talent/the-2024-yugo-bafta-student-awards-longlist"/>
-                        </div>
                         <Button text="TRAILER" className="button-large" link="https://vimeo.com/994876347?autoplay=1&muted=1&stream_id=Y2xpcHN8MTQ3NzIxNjQwfGlkOmRlc2N8W10%3D"/>
                         <Button text="LEARN MORE" className="button-large" link="https://www.selenyxie.com/tsnc-presskit"/>
                     </div>
