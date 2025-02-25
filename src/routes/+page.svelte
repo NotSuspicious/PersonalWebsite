@@ -69,7 +69,7 @@
                 blogName="unity-rendering"
                 />
                 <LargeProject
-                title="Unity Rendering"
+                title="Top Down Prototype"
                 role="Engineer"
                 background="/topdown/background.png"
                 logo="/topdown/logo.png"
