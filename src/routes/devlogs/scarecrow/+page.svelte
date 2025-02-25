@@ -9,7 +9,7 @@
 <body>
 <div class="content">
     <ProjectSplash
-            title="SCARECROW"
+            title="Scare Crow"
             logo="/scarecrow/ScarecrowLogo.png"
             background="/scarecrow/ScarecrowBackground.jpg"
     />
@@ -39,7 +39,7 @@
             </div>
         </div>
         <div class="grid-item">
-            <img class="image" src="/scarecrow/CG.jpg" alt="They Shall Not Come Back" />
+            <img class="image" src="/scarecrow/SquirrelDaze.webp" alt="Squirrel" />
         </div>
     </div>
 
@@ -68,19 +68,18 @@
     </div>
 
     <div>
-        <SectionHeader text= "Toon Shader & Post Processing" />
-        <TextInsert text='
-                - Developed a outline effect that uses <strong>ShaderGraph</strong> and a custom <strong>Render Pass</strong> to procedurally outline objects in the game based off normals.
-                <br> - Created a <strong>toon-shader</strong> using Unity <strong>Shader Graph</strong>.
-                <br> - Worked with Art Director, adjusting <strong>post-processing</strong> and <strong>lighting effects</strong> to achieve desired cartoon look.
-            '/>
-
-        <div class='grid-container'>
-            <div class="grid-item">
-                <img class="image" src="/scarecrow/NormalOutlines_Scarecrow.png" alt="They Shall Not Come Back" />
-            </div>
-            <div class="grid-item">
-                <img class="image" src="/scarecrow/CelShader_scarecrow.png" alt="They Shall Not Come Back" />
+        <div>
+            <SectionHeader text= "Toon Shader & Post Processing" />
+            <div class='grid-container'>
+                <div class="grid-item">
+                    <TextInsert text="
+                        - Developed a outline effect that uses <strong>ShaderGraph</strong> and a custom <strong>Render Pass</strong> to procedurally outline objects in the game based off normals.
+                <br> - Created a <strong>toon-shader</strong> using Unity Shader Graph.
+                    "/>
+                </div>
+                <div class="grid-item">
+                    <img class="image" src="/scarecrow/NormalOutlines_Scarecrow.png" alt="They Shall Not Come Back" />
+                </div>
             </div>
         </div>
     </div>

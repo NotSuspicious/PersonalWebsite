@@ -32,20 +32,21 @@
         </div>
 
         <div class="content">
-            <List/>
             <div id="projects"> <SectionHeader text="PROJECTS" /> </div>
             
-            <LargeProject 
-            title="They Shall Not Come Back"
-            role="VR Gameplay Engineer"
-            background="/images/TSNCB-Background.png"
-            logo="/images/TSNCB-Logo.png"
-            award="/images/TSNCB-Award.png"
-            tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
-            blogName="they-shall-not-come-back"
-            />
+
 
             <div class="project-grid">
+                <LargeProject
+                        title="They Shall Not Come Back"
+                        role="Gameplay Designer"
+                        background="/images/TSNCB-Background.png"
+                        logo="/images/TSNCB-Logo.png"
+                        award="/images/TSNCB-Award.png"
+                        tags={['Unreal Engine 5', 'Blender', 'Logic Pro', 'Meta Quest 3']}
+                        blogName="they-shall-not-come-back"
+                />
+
                 <LargeProject
                 title="Scarecrow"
                 role="Technical Artist"
@@ -67,6 +68,13 @@
                 logo="/unityurp/logo.png"
                 blogName="unity-rendering"
                 />
+                <LargeProject
+                title="Unity Rendering"
+                role="Engineer"
+                background="/topdown/background.png"
+                logo="/topdown/logo.png"
+                blogName="top-down-proto"
+                />
                 <!--
                 <LargeProject
                 title="Iron Testament"
@@ -84,6 +92,7 @@
                 /> -->
                 
             </div>
+<!--            <List/>-->
             
         </div>
 </body>
